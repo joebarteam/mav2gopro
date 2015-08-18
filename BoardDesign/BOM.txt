@@ -1,0 +1,14 @@
+1 x ESP8266-12E
+1 x 0805 RGB LED common anode
+1 x 0805 10Kohm (pull up chip enable)
+1 x 0805 1Kohm  (led)
+1 x 0805 680ohm (led)
+1 x 0805 470ohm (led)
+3 x 0805 100ohm (rx,tx,rx1)
+1 x xc6206p332mr 3,3vLDO st23 size
+1 x 0805 4.7uf  (ldo)
+1 x 0805 1.0uf  (ldo)
+1 x 4x2.5mm pushbutton switch (flash button, optional)
+
+
+PCB on OSHPark https://oshpark.com/shared_projects/gMt8XQ26
