@@ -2,7 +2,7 @@
  Copyright (c) 2015.  All rights reserved.
  An Open Source ESP8266 sketch for controlling a GoPro HERO camera via WIFI
  
-  Program    : GoProClient
+  Program    : Mav2GoPro
   Version    : v0.6, aug 2015
   Author     : joebar.rc@googlemail.com
  
@@ -36,7 +36,7 @@
 
 #include <ESP8266WiFi.h>
 #include "GCS_MAVLink.h"
-#include "GoProClient.h"
+#include "Mav2GoPro.h"
 #include <EEPROM.h>
 #ifdef CONFIGWEBSERVER
   #include <ESP8266WebServer.h>

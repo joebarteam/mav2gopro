@@ -153,31 +153,6 @@ typedef enum MAV_DATA_STREAM
 #endif
 
 /** @brief  */
-#ifndef HAVE_ENUM_GOPRO_HEARTBEAT_STATUS
-#define HAVE_ENUM_GOPRO_HEARTBEAT_STATUS
-typedef enum GOPRO_HEARTBEAT_STATUS
-{
-	GOPRO_HEARTBEAT_STATUS_DISCONNECTED=0, /* No GoPro connected | */
-	GOPRO_HEARTBEAT_STATUS_INCOMPATIBLE=1, /* The detected GoPro is not HeroBus compatible | */
-	GOPRO_HEARTBEAT_STATUS_CONNECTED_POWER_OFF=2, /* A HeroBus compatible GoPro is connected | */
-	GOPRO_HEARTBEAT_STATUS_CONNECTED_POWER_ON=3, /* A HeroBus compatible GoPro is connected | */
-	GOPRO_HEARTBEAT_STATUS_RECORDING=4, /* A HeroBus compatible GoPro is connected and recording | */
-	GOPRO_HEARTBEAT_STATUS_ERR_OVERTEMP=5, /* A HeroBus compatible GoPro is connected and overtemperature | */
-	GOPRO_HEARTBEAT_STATUS_ERR_STORAGE=6, /* A HeroBus compatible GoPro is connected and storage is missing or full | */
-	GOPRO_HEARTBEAT_STATUS_ENUM_END=7, /*  | */
-} GOPRO_HEARTBEAT_STATUS;
-#endif
-
-/** @brief  */
-#ifndef HAVE_ENUM_GOPRO_SET_RESPONSE_RESULT
-#define HAVE_ENUM_GOPRO_SET_RESPONSE_RESULT
-typedef enum GOPRO_SET_RESPONSE_RESULT
-{
-	GOPRO_SET_RESPONSE_RESULT_FAILURE=0, /* The write message with ID indicated failed | */
-	GOPRO_SET_RESPONSE_RESULT_SUCCESS=1, /* The write message with ID indicated succeeded | */
-	GOPRO_SET_RESPONSE_RESULT_ENUM_END=2, /*  | */
-} GOPRO_SET_RESPONSE_RESULT;
-#endif 
 
 #include "../common/common.h"
 
@@ -202,6 +177,7 @@ typedef enum GOPRO_SET_RESPONSE_RESULT
 #include "./mavlink_msg_gopro_get_response.h"
 #include "./mavlink_msg_gopro_set_request.h"
 #include "./mavlink_msg_gopro_set_response.h"
+#include "./gopro_enums.h"
 
 #ifdef __cplusplus
 }
